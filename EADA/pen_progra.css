@@ -1,0 +1,100 @@
+/* Estilos generales */
+.body_tabla {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.titulo_tabla {
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Contenedor de cada ticket */
+.ticket_container {
+    margin-bottom: 20px;
+    width: 90%; /* Ocupa más espacio horizontal */
+    max-width: 1200px; /* Ajusta al tamaño máximo */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+}
+
+/* Estilos de la tabla */
+.tabla_ticket {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    table-layout: auto; /* Ajuste automático según contenido */
+    word-wrap: break-word; /* Rompe palabras largas */
+}
+
+.tabla_ticket th,
+.tabla_ticket td {
+    padding: 10px;
+    text-align: left; /* Alineación izquierda para textos largos */
+    border-bottom: 1px solid #ff69b4;
+    line-height: 1.4; /* Espaciado uniforme */
+    vertical-align: top; /* Alineación superior */
+}
+
+.tabla_ticket th {
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center; /* Encabezados centrados */
+}
+
+.tabla_ticket td {
+    font-size: 13px;
+    color: #030103;
+}
+
+/* Diseño en dos pisos */
+.tabla_ticket td:nth-child(2),
+.tabla_ticket td:nth-child(4),
+.tabla_ticket td:nth-child(6) {
+    display: block; /* Cada celda se verá en su propia línea si es necesario */
+    margin-top: 8px; /* Separación entre líneas */
+    font-size: 12px;
+}
+
+/* Resaltado al pasar el cursor */
+.tabla_ticket tr:hover {
+    background-color: #ff69b469;
+}
+
+.tabla_ticket tr {
+    background-color: #ffd1e8;
+}
+
+/* Estilos del botón */
+.boton_responder {
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 10px 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.boton_responder:hover {
+    background-color: #ff4681;
+}

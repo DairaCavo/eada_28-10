@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ticket</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body class="ticket_c">
+    <div class="container">
+        <h2 class="titulo">Formulario para el Ticket</h2> 
+        <form action="valida_ticket.php" method="POST" class="formulario">
+            <div class="form-content">
+                <!-- Columna 1 -->
+                <div class="column">
+                    <div class="section datos-ticket">
+                        <h3 class="subtitulo">Datos del Ticket</h3>
+                        <label for="titulo" class="etiqueta">Título:</label>
+                        <input type="text" id="titulo" name="titulo" class="campo" required>
+                        
+                        <label for="fecha_asignacion" class="etiqueta">Fecha de Asignación:</label>
+                        <input type="date" id="fecha_asignacion" name="fecha_asignacion" class="campo" required>
+                        
+                        <label for="fecha_finalizacion" class="etiqueta">Fecha de Finalización:</label>
+                        <input type="date" id="fecha_finalizacion" name="fecha_finalizacion" class="campo">
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="column">
+                    <div class="section especificaciones">
+                        <h3 class="subtitulo">Especificaciones del Proyecto</h3>
+                        <label for="paleta_colores" class="etiqueta">Paleta de Colores:</label>
+                        <input type="text" id="paleta_colores" name="paleta_colores" class="campo">
+                        
+                        <label for="esquema_diseño" class="etiqueta">Esquema de Diseño:</label>
+                        <input type="text" id="esquema_diseño" name="esquema_diseño" class="campo">
+
+                        <label for="prioridad" class="etiqueta">Prioridad:</label>
+                        <select id="prioridad" name="prioridad" class="campo" required>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="column">
+                    <div class="section descripcion">
+                        <h3 class="subtitulo">Descripción</h3>
+                        <label for="descripcion" class="etiqueta">Descripción del Pedido:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" class="textarea" required></textarea>
+                        
+                        <label for="descripcion_archivos" class="etiqueta">Descripción de Archivos:</label>
+                        <textarea id="descripcion_archivos" name="descripcion_archivos" rows="4" class="textarea"></textarea>
+                        
+                        <label for="comentarios_adicionales" class="etiqueta">Comentarios Adicionales:</label>
+                        <textarea id="comentarios_adicionales" name="comentarios_adicionales" rows="4" class="textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="boton">Enviar Ticket</button>
+        </form>
+    </div>
+</body>
+</html>

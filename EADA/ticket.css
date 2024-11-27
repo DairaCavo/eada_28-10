@@ -1,0 +1,198 @@
+/* Clase para el fondo de la página */
+.fondo-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #ffe4e1; /* Color de fondo */
+    margin: 0;
+    text-align: center;
+}
+
+/* Clase para el título de bienvenida */
+.titulo-bienvenida {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+/* Clase para el subtítulo */
+.subtitulo-accion {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* Clase para el texto secundario */
+.texto-secundario {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Clase para el formulario de botones */
+.formulario-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre botones */
+    width: 90%;
+    max-width: 400px; /* Máximo ancho del formulario */
+}
+
+/* Clase para los botones con efecto de animación */
+.boton-animado {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Suaviza el cambio de color y el efecto de clic */
+}
+
+.boton-animado:hover {
+    background-color: rgb(158, 69, 154);
+}
+
+.boton-animado:active {
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fondo de la página */
+.ticket_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4e1, #ffc0cb);
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Evita scroll innecesario */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90%; /* Limita la altura total */
+    overflow-y: auto; /* Permite desplazarse si es necesario */
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem); /* Tamaño adaptable */
+    color: #ff69b4;
+    margin-bottom: 15px; /* Reduce espacio */
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor del contenido del formulario */
+.form-content {
+    display: flex;
+    gap: 15px; /* Reduce espacio entre columnas */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 100%; /* Asegura que no exceda el contenedor */
+}
+
+/* Columnas */
+.column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    max-height: 80vh; /* Limita altura */
+    overflow-y: auto; /* Desplazamiento interno si es necesario */
+    padding: 5px; /* Reduce espacio interno */
+}
+
+/* Secciones */
+.section {
+    background-color: #f9f9f9;
+    padding: 15px; /* Reduce espacio interno */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Reduce separación entre secciones */
+}
+
+/* Subtítulos */
+.subtitulo {
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Tamaño adaptable */
+    color: #333333;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ff69b4;
+    padding-bottom: 3px;
+}
+
+/* Etiquetas */
+.etiqueta {
+    font-size: 0.9rem;
+    color: #333333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Campos de entrada y áreas de texto */
+.campo, 
+.textarea, 
+.campo select {
+    width: 100%;
+    padding: 8px; /* Reduce espacio interno */
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduce tamaño de texto */
+}
+
+/* Botón */
+.boton {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px; /* Reduce espacio interno */
+    margin: 10px auto 0;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    color: white;
+    font-size: 1rem; /* Reduce tamaño de texto */
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.boton:hover {
+    background: linear-gradient(90deg, #ff1493, #c71585);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
